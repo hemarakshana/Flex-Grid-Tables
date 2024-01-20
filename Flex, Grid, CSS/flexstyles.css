@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.h2{
+    font-weight: bold;
+}
+
+.flex-container, .grid-container, .table-container {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/* Styling for the Flex section */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #7a94e9;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: cyan;
+}
+
+.flex-item img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for all images */
+    object-fit: cover;
+    background-color: #c0c0c0; /* Set the background color for images */
+}
+
+/* Styling for the Grid section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: rgb(11, 173, 173);
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: aqua;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for all images */
+    object-fit: cover;
+    background-color: #c0c0c0; /* Set the background color for images */
+}
+
+/* Styling for the Table section */
+.table-container {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #d88585;
+}
+
+.table-container img{
+    width: 100%;
+    height: 100px;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: justify;
+}
+
+thead {
+    background-color: #f2f2f2;
+    text-align: justify;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
